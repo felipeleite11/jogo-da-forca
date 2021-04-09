@@ -5,10 +5,11 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-self: flex-end;
-	margin: 50px;
+	margin: 0 50px;
 	width: 200px;
 	padding-left: 16px;
 	height: fit-content;
+	min-height: 80px;
 	border-left: solid 1px grey;
 
 	h1 {

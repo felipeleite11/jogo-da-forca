@@ -7,13 +7,12 @@ import img4 from './assets/forca/4.png'
 import img5 from './assets/forca/5.png'
 import img6 from './assets/forca/6.png'
 import img7 from './assets/forca/7.png'
-import img8 from './assets/forca/8.png'
 
 import wordsDatabase from './wordsDatabase'
 
 export const GlobalContext = createContext()
 
-const maxErrors = 7
+const maxErrors = 6
 const images = [
 	img1,
 	img2,
@@ -21,8 +20,7 @@ const images = [
 	img4,
 	img5,
 	img6,
-	img7,
-	img8
+	img7
 ]
 
 const GlobalProvider = ({ children }) => {

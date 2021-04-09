@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 
-import { Container } from './styles'
+import { Container, Word } from './styles'
 
 import Letter from '../Letter'
 
@@ -11,7 +11,23 @@ export default function () {
 
 	return (
 		<Container>
-			{word && word.split('').map(letter => {
+			{word && word.split(' ').map(wordItem => (
+				<Word>
+					{wordItem.split('').map(letter => {
+						if(alreadyChosen.includes(letter)) {
+							return <Letter letter={letter} />
+						}
+
+						// if(letter === ' ') {
+						// 	return <Letter />
+						// }
+						
+						return <Letter letter="_" />
+					})}
+				</Word>
+			))}
+
+			{/* {word.split('').map(letter => {
 				if(alreadyChosen.includes(letter)) {
 					return <Letter letter={letter} />
 				}
@@ -21,7 +37,7 @@ export default function () {
 				}
 				
 				return <Letter letter="_" />
-			})}
+			})} */}
 		</Container>
 	)
 }
