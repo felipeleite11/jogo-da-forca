@@ -23,6 +23,18 @@ export default createGlobalStyle`
 	}
 `
 
+export const StartContainer = styled.article`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 99vh;
+
+	button {
+		font-size: 20px;
+	}
+`
+
 export const Container = styled.article`
 	display: grid;
 	grid-template-columns: 300px auto 250px 250px;
